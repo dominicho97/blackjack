@@ -15,6 +15,11 @@ deck.push(values[valuesIdx]) + '' of '' + suits[suitIdx]);
   }
 }
 
+for (let i = 0; i<deck.length; i++){
+  console.log(deck[i]);
+}
+
+
 let playerCards = [deck[0], deck[2]];
 
 
