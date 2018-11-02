@@ -28,6 +28,12 @@ function getNextCard(){
   return deck.shift();
 }
 
+function getCardString(card){
+return card.value + ' ' of ' ' + card.suit
+};
+
+
+
 let deck = createDeck)();
 
 
