@@ -14,7 +14,11 @@ function createDeck () {
   let deck = [];
   for (let suitIdx = 0; suitIdx<suits.length; suitIdx++) {
     for (let valuesIdx = 0; valuesIdx<values.length;valuesIdx++) {
-    deck.push(values[valuesIdx] + ' of ' + suits[suitIdx] );
+      let card = {
+            suit: suits[suitIdx],
+            value: values[valuesIdx]
+      };
+    deck.push(card );
       }
     }
     return deck;
@@ -27,12 +31,10 @@ function getNextCard(){
 let deck = createDeck)();
 
 
-for (let i = 0; i<deck.length; i++){
-  console.log(deck[i]);
-}
 
 
-let playerCards = [deck[0], deck[2]];
+
+let playerCards = [getNextCard,getNextCard];
 
 
 
