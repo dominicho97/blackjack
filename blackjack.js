@@ -9,11 +9,18 @@ let values = ['Ace', 'King', 'Queen', 'Jack', 'Ten', 'Nine', 'Eight', 'Seven', '
 let deck = [];
 
 
-for (let suitIdx = 0; suitIdx<suits.length; suitIdx++) {
-for (let valuesIdx = 0; valuesIdx<values.length;valuesIdx++) {
-deck.push(values[valuesIdx] + ' of ' + suits[suitIdx] );
-  }
+
+function createDeck () {
+  deck = [];
+  for (let suitIdx = 0; suitIdx<suits.length; suitIdx++) {
+    for (let valuesIdx = 0; valuesIdx<values.length;valuesIdx++) {
+    deck.push(values[valuesIdx] + ' of ' + suits[suitIdx] );
+      }
+    }
+    return deck;
 }
+
+
 
 for (let i = 0; i<deck.length; i++){
   console.log(deck[i]);
