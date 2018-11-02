@@ -2,6 +2,11 @@
 // blackjack
 // y Dominic Ho
 
+let deck = ["Ace of spades ",
+            "Two of spades ",
+            "Three of spades"
+
+];
 
 let card1 = "Ace of spades "
     card2 = "Ten of hearts"
