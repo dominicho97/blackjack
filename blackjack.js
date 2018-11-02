@@ -3,16 +3,17 @@
 // y Dominic Ho
 
 
-let suits ['Hearts, Clubs, Diamonds, Spades' ];
+let suits = ['Hearts, Clubs, Diamonds, Spades' ];
+let values = ['Ace, King, Queen, Jack, Ten, Nine, Eight, Seven, Six, Five, Four, Three, Two, ']
+
+let deck = [];
 
 
-
-let deck = ["Ace of spades ",
-            "Two of spades ",
-            "Three of spades"
-
-];
-
+for (let suitIdx = 0; suitIdx<suits.length; suitIdx++) {
+for (let valuesIdx = 0; valuesIdx<values.length;valuesIdx++) {
+deck.push(values[valuesIdx]) + '' of '' + suits[suitIdx]);
+  }
+}
 
 let playerCards = [deck[0], deck[2]];
 
