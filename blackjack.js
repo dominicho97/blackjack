@@ -28,13 +28,13 @@ function getNextCard(){
   return deck.shift();
 }
 
-function getCardString(card){
-return card.value + ' ' of ' ' + card.suit
-};
+function getCardString(card)  {
+  return card.value +  ' of '  + card.suit;
+}
 
 
 
-let deck = createDeck)();
+let deck = createDeck();
 
 
 
@@ -47,7 +47,7 @@ let playerCards = [getNextCard,getNextCard];
     console.log("Welcome to Blackjack!");
     console.log("You are dealt: ");
 
-    console.log("  "+ playerCards[1]);
-    console.log("  "+ playerCards[0]);
+    console.log("  "+ getCardString(playerCards[0]));
+    console.log("  "+ getCardString(playerCards[1]));
 
 
