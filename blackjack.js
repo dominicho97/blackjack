@@ -79,6 +79,11 @@ function getCardString(card)  {
   return card.value +  ' of '  + card.suit;
 }
 
+
+function getNextCard(){
+  return deck.shift();
+}
+
 function showStatus(){
   if (!gameStarted){
     textArea.innerText = 'Welcome to Blackjack!';
@@ -86,13 +91,26 @@ function showStatus(){
   }
 }
 
+let dealerCardString = '';
+for(let i=0; i<dealerCards.length; i++){
+  playerCardString += getCardString(playerCards[i]) + '/n';
+}
+
+
+
+
+
+for(var i =0; i<deck.length; i++){
+  textArea.innerText += '/n'+ getCardString(deck[i]);
+  }
+
+
+
 let deck = createDeck();
 
 
 
-function getNextCard(){
-  return deck.shift();
-}
+
 
 let playerCards = [getNextCard,getNextCard];
 
