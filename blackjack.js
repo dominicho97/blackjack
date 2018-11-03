@@ -38,6 +38,7 @@ newGameButton.addEventListener('click', function(){
   playerWon = false;
 
   deck = createDeck();
+  shuffleDeck (deck);
   dealerCards = [getNextCard(), getNextCard()];
   playerCards = [getNextCard(), getNextCard()];
 
@@ -65,7 +66,14 @@ function createDeck () {
     return deck;
 }
 
-
+function shuffleDeck(deck){
+for (let i = 0; i<deck.length; i++ ){
+  let swapIdx = math.trunc(math.random()*deck.length);
+  let tmp = deck(swapIdx);
+  deck[i] = swapIdx
+  deck[swapIdx] = deck[i];
+  }
+}
 
 function getCardString(card)  {
   return card.value +  ' of '  + card.suit;
