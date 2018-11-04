@@ -49,6 +49,16 @@ newGameButton.addEventListener('click', function(){
   showStatus();
 });
 
+hitButton.addEventListener('click', function(){
+playerCards.push(getNextCard());
+checkForEndGame();
+showStatus();
+});
+
+
+
+
+
 
 
 
