@@ -67,7 +67,6 @@ stayButton.addEventListener('click', function(){
 
 
 
-
 function createDeck () {
   let deck = [];
   for (let suitIdx = 0; suitIdx<suits.length; suitIdx++) {
@@ -167,7 +166,9 @@ function updateScores(){
   playerScore = getScore(playerCards);
 }
 
-
+function checkForEndGame(){
+  //todo
+}
 
 function showStatus(){
   if (!gameStarted){
