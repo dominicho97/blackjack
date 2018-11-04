@@ -55,6 +55,12 @@ checkForEndGame();
 showStatus();
 });
 
+stayButton.addEventListener('click', function(){
+  gameOver = true;
+  checkForEndGame();
+  showStatus();
+})
+
 
 
 
